@@ -1,5 +1,6 @@
 build:
 	docker build -t opstree/ansible:1.0 .
+	docker build -t opstree/ansibledocker:1.0 -f Dockerfile.controlserver .
 
 create-network:
 	@docker network create opstree || true > /dev/null
@@ -16,7 +17,7 @@ terminate-vm:
 
 run-controlserver:
 	@docker rm -f controlserver || true  > /dev/null
-	@docker run -itd --name controlserver --rm --net opstree -v ${PWD}:/src opstree/ansible:1.0
+	@docker run -itd --name controlserver --rm --net opstree -v ${PWD}:/src -v /var/run/docker.sock:/var/run/docker.sock --privileged opstree/ansibledocker:1.0
 
 list-vm:
 	echo "Listing VM's"
