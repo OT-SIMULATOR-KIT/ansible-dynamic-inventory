@@ -25,3 +25,7 @@ list-vm:
 wait:
 	read -p "Press enter to continue...."
 	clear
+
+run-ping:
+	echo "Validating connection to VM's"
+	docker exec -it controlserver bash -c "ansible -i /src/$(INVENTORY) all -m ping"

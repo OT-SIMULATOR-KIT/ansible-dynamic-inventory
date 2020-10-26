@@ -23,6 +23,8 @@ cleanup:
 	make terminate-vm VM_NAME=vm5
 	make terminate-vm VM_NAME=controlserver
 
+run-ansible-ping:
+
 run-simulation:
 	echo "Doing initial setup"
 	make initialize-setup
@@ -31,16 +33,25 @@ run-simulation:
 	make list-vm
 	make wait
 
+	make run-ping INVENTORY=inventory1
+	make wait
+
 	make add-vm
 	make wait
 
 	make list-vm
 	make wait
 
+	make run-ping INVENTORY=inventory2
+	make wait
+
 	make delete-vm
 	make wait
 
 	make list-vm
+	make wait
+
+	make run-ping INVENTORY=inventory3
 	make wait
 
 	make cleanup
