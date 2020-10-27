@@ -26,7 +26,9 @@ We will be doing a gradual move to dynamic inventory solution
 cd static_inventory
 make run-simulation
 ```
-[Static Inventory](https://terminalizer.com/view/fdb2663f4364)
+
+<p align="center"><img src="/img/DynamicInventory1.gif?raw=true"/></p>
+
 * Implement dynamic inventory by replacing inventory file via corresponding json file but still changing inventory file as per changing infrastructure
 ```
 cd json_static_inventory
