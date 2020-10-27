@@ -23,8 +23,6 @@ cleanup:
 	make terminate-vm VM_NAME=vm5
 	make terminate-vm VM_NAME=controlserver
 
-run-ansible-ping:
-
 run-simulation:
 	echo "Doing initial setup"
 	make initialize-setup
