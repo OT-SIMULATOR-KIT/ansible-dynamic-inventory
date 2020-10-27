@@ -19,6 +19,7 @@ We are simulating Dynamic inventory in 3 steps:
     * Delete 2 VM's(vm1 & vm2) in the overall setup
     * Use ansible ping module to validate if control server can talk to remaining VM's(vm3, vm4 & vm5)
 
+# Detailed Flow
 We will be doing a gradual move to dynamic inventory solution
 * Implement dynamic inventory by updating static inventory file as per chaning infrastructure
 ```
