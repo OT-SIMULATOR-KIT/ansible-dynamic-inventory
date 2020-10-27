@@ -35,14 +35,20 @@ cd json_static_inventory
 make run-simulation
 ```
 
+<p align="center"><img src="/img/DynamicInventory2.gif?raw=true"/></p>
+
 * Implement dynamic inventory by replacing inventory file via a bash script, but still the bash script will be updated as per changing infrastructure
 ```
 cd dynamic_inventory_sol1
 make run-simulation
 ```
 
+<p align="center"><img src="/img/DynamicInventory3.gif?raw=true"/></p>
+
 * Implement dynamic inventory by replacing inventory file via a bash script, this bash script will actually get the VM details at runtime
 ```
 cd dynamic_inventory_sol2
 make run-simulation
 ```
+
+<p align="center"><img src="/img/DynamicInventory4.gif?raw=true"/></p>
