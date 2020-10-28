@@ -1,0 +1,21 @@
+{
+    "all": {
+      "hosts": {
+        "vm1": {
+            "ansible_ssh_common_args": "-o StrictHostKeyChecking=no"
+        },
+        "vm2": {
+            "ansible_ssh_common_args": "-o StrictHostKeyChecking=no"
+        },
+        "vm3": {
+            "ansible_ssh_common_args": "-o StrictHostKeyChecking=no"
+        },
+        "vm4": {
+            "ansible_ssh_common_args": "-o StrictHostKeyChecking=no"
+        },
+        "vm5": {
+            "ansible_ssh_common_args": "-o StrictHostKeyChecking=no"
+        }
+      }
+    }
+  }
